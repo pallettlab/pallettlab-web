@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pallett Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root{
+      --sage-bg:#d6d8c8;
+      --sage-top:#a6ab91;
+      --ink:#1d1d1b;
+      --soft:#6c6b66;
+      --footer:#131313;
+      --footerText:#e8e0d0;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html,
+    body{
+      min-height:100%;
+    }
+
+    body{
+      background:var(--footer);
+      color:var(--ink);
+      font-family:'Inter',sans-serif;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    .page{
+      background:var(--sage-bg);
+    }
+
+    .topbar{
+      background:var(--sage-top);
+      padding:28px 20px;
+      text-align:center;
+    }
+
+    .brand{
+      font-family:'Cormorant Garamond',serif;
+      font-size:clamp(3rem,5vw,5rem);
+      font-weight:400;
+      letter-spacing:-0.03em;
+      color:#1c1c1a;
+    }
+
+    main{
+      padding:78px 20px 0;
+    }
+
+    .hero{
+      max-width:1200px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:0.42em;
+      font-size:0.74rem;
+      color:var(--soft);
+      margin-bottom:18px;
+      font-weight:600;
+    }
+
+    h1{
+      font-size:1.15rem;
+      line-height:1.5;
+      font-weight:400;
+      color:var(--soft);
+    }
+
+    .subtitle{
+      margin-top:24px;
+      font-size:1.15rem;
+      color:var(--soft);
+      font-weight:400;
+    }
+
+    .hero-image{
+      width:min(100%,920px);
+      margin:58px auto 0;
+      overflow:hidden;
+      background:white;
+      box-shadow:0 25px 60px rgba(0,0,0,0.08);
+    }
+
+    .hero-image img{
+      width:100%;
+      display:block;
+      filter:grayscale(100%);
+    }
+
+    footer{
+      margin-top:82px;
+      background:var(--footer);
+      color:var(--footerText);
+      text-align:center;
+      padding:56px 20px 64px;
+    }
+
+    .footer-title{
+      font-family:'Cormorant Garamond',serif;
+      font-size:1.05rem;
+      letter-spacing:0.34em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+
+    .footer-line{
+      width:120px;
+      height:1px;
+      background:rgba(232,224,208,0.35);
+      margin:0 auto 22px;
+    }
+
+    .contact-item{
+      margin:12px 0;
+      font-size:1rem;
+      font-weight:300;
+    }
+
+    .contact-item a{
+      color:var(--footerText);
+      text-decoration:none;
+      border-bottom:1px solid rgba(232,224,208,0.35);
+      padding-bottom:2px;
+    }
+
+    @media(max-width:768px){
+
+      .topbar{
+        padding:24px 16px;
+      }
+
+      .brand{
+        font-size:clamp(2.4rem,9vw,4rem);
+      }
+
+      main{
+        padding-top:56px;
+      }
+
+      .hero-image{
+        margin-top:42px;
+      }
+
+      footer{
+        padding:48px 16px 56px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header class="topbar">
+      <div class="brand">
+        Pallett Lab
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero">
+
+        <div class="eyebrow">
+          Dance & Art Laboratory
+        </div>
+
+        <h1>
+          Pallett Lab je vznikající taneční a kreativní koncept z jižní Moravy.
+        </h1>
+
+        <div class="subtitle">
+          Prostor pro pohyb, tvorbu a objevování
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="black-and-white-webovky.jpg"
+            alt="Pallett Lab"
+          >
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+
+      <div class="footer-title">
+        Kontakt
+      </div>
+
+      <div class="footer-line"></div>
+
+      <div class="contact-item">
+        E-mail:
+        <a href="mailto:pallettlab@gmail.com">
+          pallettlab@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-item">
+        IG:
+        <a href="https://instagram.com/pallett.lab" target="_blank">
+          @pallett.lab
+        </a>
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
